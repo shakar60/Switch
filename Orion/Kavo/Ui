@@ -1,0 +1,17 @@
+local NotificationBindable = Instance.new("BindableFunction")
+
+function NotificationBindable.OnInvoke(buttonPressed)
+    if buttonPressed == "Kavo" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/Universal-Shakars/main/Hub%20Protected!",true))()
+    elseif buttonPressed == "Orion" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/USH.P/main/rotected",true))() 
+    end
+end
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Switch Verisions v2 by JJ Capalot",
+    Text = "Loads shakars Script Selecter",
+    Button1 = "Kavo",
+    Button2 = "Orion",
+    Callback = NotificationBindable
+})
