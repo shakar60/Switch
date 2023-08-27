@@ -9,7 +9,7 @@ function NotificationBindable.OnInvoke(buttonPressed)
 end
 
 game.StarterGui:SetCore("SendNotification", {
-    Title = "Switch Verisions v2 by JJ Capalot",
+    Title = "Switch Versions V2 By Zillion.",
     Text = "Loads shakars Script Selecter",
     Button1 = "Kavo Ui",
     Button2 = "Orion Ui [Recommended]",
